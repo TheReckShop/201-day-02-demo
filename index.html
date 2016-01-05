@@ -4,6 +4,24 @@
     <title></title>
   </head>
   <body>
-    Wheeeeeeeeeeeeee!!!!
+    <h1>Wheeeeeeeeeeeeee!!!!! Imma ask you a question. </h1>
+
+    <script type="text/javascript">
+      var user = prompt('What is your name?');
+
+      alert('Hi There, ' + user + ', Imma ax you a question.');
+
+      console.log('The user\'s name is ' + user);
+
+      var answer1 = prompt(user + ', this is a yes or no question, so please answer with Y or N. Does Sam have 4 cats?');
+
+      console.log('The user answered Question 1: ' + answer1);
+
+      if(answer1 === 'N') {
+        alert('Damn Straight! Sam has 3 cats');
+      } else {
+        alert('WRONG: FUCKING LOSER!');
+      }
+    </script>
   </body>
 </html>
