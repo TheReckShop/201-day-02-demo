@@ -4,23 +4,36 @@
     <title></title>
   </head>
   <body>
-    <h1>Wheeeeeeeeeeeeee!!!!! Imma ask you a question. </h1>
+    <h1>WE GONNA PLAY A GAME SON! </h1>
+    <p>
+      You'll be asked a series of questions when accessing this sight. Can you catch 'em all?'
+    </p>
 
     <script type="text/javascript">
       var user = prompt('What is your name?');
 
-      alert('Hi There, ' + user + ', Imma ax you a question.');
+      alert('Hi There, ' + user + ', Imma ax you a few questions.');
 
       console.log('The user\'s name is ' + user);
 
-      var answer1 = prompt(user + ', this is a yes or no question, so please answer with Y or N. Does Sam have 4 cats?');
+      var answer1 = prompt(user + ', this is a yes or no question, so please answer with Y or N. Does David Cole enjoy the musial "CATS"?');
 
       console.log('The user answered Question 1: ' + answer1);
 
       if(answer1 === 'N') {
-        alert('Damn Straight! Sam has 3 cats');
+        alert('Damn Straight! That musical if fucking aweful');
       } else {
-        alert('WRONG: FUCKING LOSER!');
+        alert('WRONG: YOU LOSE');
+      }
+
+      var answer2 = prompt(user + ', Same as before so please answer with Y or N. Is Cabaret David Cole\'s favorite muscial');
+
+      console.log('The user answered Question 2: ' + answer2);
+
+      if(answer2 === 'Y') {
+        alert('Damn straight son! Cabaret is totally my favorite musical!');
+      } else {
+        alert('DEFINITELY WRONG BIZNITCH! Cabaret is mos def my favorite muscal son.')
       }
     </script>
   </body>
