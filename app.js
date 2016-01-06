@@ -1,6 +1,8 @@
 
   var user = prompt('What is your name?');
 
+  var counter = 0;
+
   alert('Hi There, ' + user + ', Imma ax you a few questions.');
 
   console.log('The user\'s name is ' + user);
@@ -13,6 +15,7 @@
 
   if(answer1.toLowerCase() === 'n' || answer1.toLowerCase() === 'no') {
     alert('Damn Straight! That musical if fucking aweful');
+    counter += 1;
   } else {
     alert('WRONG: YOU LOSE');
   }
@@ -21,8 +24,9 @@
 
   console.log('The user answered Question 2: ' + answer2);
 
-  if(answer2.toLowerCase() === 'y' || answer2.toLowerCase() === 'yes') || answer2.toLowerCase() === 'ya' {
+  if(answer2.toLowerCase() === 'y' || answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'ya') {
     alert('Damn straight son! Cabaret is totally my favorite musical!');
+    counter += 1;
   } else {
     alert('DEFINITELY WRONG BIZNITCH! Cabaret is mos def my favorite muscal son.')
   }
@@ -31,8 +35,9 @@
 
   console.log('The user answered Question 3: ' + answer3);
 
-  if(answer3.toLowerCase() === 'y' || answer3.toLowercase() === 'yes') {
+  if(answer3.toLowerCase() === 'y' || answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'ya') {
     alert('Obviously!');
+    counter+=1;
   } else {
     alert('You straight trippin\' son! codefellows is toats hella awesome!');
   }
@@ -46,7 +51,10 @@
   } else if(answer4 < 7) {
     alert('TOO LOW');
 } else if(answer4 == 7) {
+  /* when working with numbers instead of script use == instead of === because it cannot read answer4 === 7 it can only process answer4 == 7 for whatever reason */
   alert('CORRECT')
+  counter+=1;
 } else {
   alert('YOU DID NOT ENTER A NUMBER DUMBASS')
 }
+  alert('You got ' + counter);
