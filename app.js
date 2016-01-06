@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
   var user = prompt('What is your name?');
 
   alert('Hi There, ' + user + ', Imma ax you a few questions.');
