@@ -11,7 +11,7 @@
 
   /*make it so that we can accept lower case 'n' or 'N' or 'NO' as an acceptable response*/
 
-  if(answer1 === 'N' || answer1 === 'n' || answer1 === 'NO' || answer1 === 'no' || answer1 === 'No') {
+  if(answer1.toLowerCase() === 'N' || answer1.toLowerCase() === 'n' || answer1.toLowerCase() === 'NO' || answer1.toLowerCase() === 'no' || answer1.toLowerCase() === 'No') {
     alert('Damn Straight! That musical if fucking aweful');
   } else {
     alert('WRONG: YOU LOSE');
@@ -21,7 +21,7 @@
 
   console.log('The user answered Question 2: ' + answer2);
 
-  if(answer2 === 'Y' || answer2 ==='y' || answer2 ==='YES' || answer2 ==='yes' || answer2 === 'Yes') {
+  if(answer2.toLowerCase() === 'Y' || answer2.toLowerCase() ==='y' || answer2.toLowerCase() ==='YES' || answer2.toLowerCase() ==='yes' || answer2.toLowerCase() === 'Yes') {
     alert('Damn straight son! Cabaret is totally my favorite musical!');
   } else {
     alert('DEFINITELY WRONG BIZNITCH! Cabaret is mos def my favorite muscal son.')
@@ -31,7 +31,7 @@
 
   console.log('The user answered Question 3: ' + answer3);
 
-  if(answer3 === 'Y' || answer3 === 'y' || answer3 === 'YES' || answer3 === 'yes' || answer3 ==='Yes') {
+  if(answer3.toLowerCase() === 'Y' || answer3.toLowerCase() === 'y' || answer3.toLowerCase() === 'YES' || answer3.toLowerCase() === 'yes' || answer3.toLowerCase() ==='Yes') {
     alert('Obviously!');
   } else {
     alert('You straight trippin\' son! codefellows is toats hella awesome!');
@@ -45,7 +45,7 @@
     alert('TOO HIGH!');
   } else if(answer4 < 7) {
     alert('TOO LOW');
-} else if(answer4 === 7) {
+} else if(answer4 == 7) {
   alert('CORRECT')
 } else {
   alert('YOU DID NOT ENTER A NUMBER DUMBASS')
