@@ -44,17 +44,30 @@
 
   var answer4 = prompt(user + ', One last question: Can you guess what number I am thinking of?');
 
-  console.log('The user answered question 4: ' + answer4)
+  console.log('The user answered question 4: ' + answer4);
 
   if(answer4 > 7) {
     alert('TOO HIGH!');
   } else if(answer4 < 7) {
     alert('TOO LOW');
 } else if(answer4 == 7) {
-  /* when working with numbers instead of script use == instead of === because it cannot read answer4 === 7 it can only process answer4 == 7 for whatever reason */
+  /* when working with numbers instead of script use == instead of === because it cannot read answer4 === 7 it can only process answer4 == 7 beause they are not the same data type or value */
   alert('CORRECT')
   counter+=1;
 } else {
   alert('YOU DID NOT ENTER A NUMBER DUMBASS')
 }
-  alert('You got ' + counter);
+  alert('You got ' + counter + ' answers correct!! Great Job!!! But there\'s one last question');
+
+var dog = 'cat';
+  while (dog==='cat') {
+    var answer5 = prompt('What is my favorite number, this time for realzies?!?!?');
+    if (answer5==7) {
+      alert('Correct, you the best!');
+      dog='dog';
+  } else {
+    alert('Nope, try again...');
+  }
+
+
+  }
