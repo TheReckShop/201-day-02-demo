@@ -2,6 +2,12 @@
   var user = prompt('What is your name?');
 
   var counter = 0;
+  
+  var res1 = document.getElementById('resultOne');
+  var res2 = document.getElementById('resultTwo');
+  var res3 = document.getElementById('resultThree');
+  var res4 = document.getElementById('resultFour');
+  var res5 = document.getElementById('resultFive');
 
   alert('Hi There, ' + user + ', Imma ax you a few questions.');
 
@@ -60,9 +66,9 @@
   alert('You got ' + counter + ' answers correct!! Great Job!!! But there\'s one last question');
 
 var dog = 'cat';
-  while (dog==='cat') {
+  while (dog === 'cat') {
     var answer5 = prompt('What is my favorite number, this time for realzies?!?!?');
-    if (answer5==7) {
+    if (answer5 == 7) {
       alert('Correct, you the best!');
       dog='dog';
   } else {
