@@ -9,50 +9,84 @@ var res5 = document.getElementById('resultFive');
 var user = prompt('What is your name?');
   console.log('The user\'s name is ' + user);
 alert('Hi There, ' + user + ', Imma ax you a few questions.');
+// var quesData = [[first ques stuff],[ second ques stuff]];
+// var quesData = [[ques, ans1, ans2, right-mess, wrong-mess],[ second ques stuff]];
+var questData =
+  [
+    [
+      'this is a yes or no question, so please answer with Y or N. Does David Cole enjoy the musial "CATS"?',
+      'n',
+      'no',
+      ' that\'s right!',
+      ' Wrong muthafucka'
+    ],
+    [
+      'Same as before, so please answer with Y or N. Is Cabaret David Cole\'s favorite muscial',
+      'y',
+      'yes',
+      ' Yes! That is my favorite musical.',
+      ' DEFINITELY WRONG BIZNITCH! Cabaret is mos def my favorite muscal son.'],
+      [
+        'One last question (again please answer with Y or N) Is codefellows hella awesome?',
+        'y',
+      'yes',
+      ' Obviously!',
+      ' You straight trippin\' son! codefellows is toats hella awesome!']]
 
-q1();
+
 function q1() {
-  var answer1 = prompt(user + ', this is a yes or no question, so please answer with Y or N. Does David Cole enjoy the musial "CATS"?');
+  var answer1 = prompt(questData[0][0]);
 
   console.log('The user answered Question 1: ' + answer1);
 
   /*make it so that we can accept lower case 'n' or 'N' or 'NO' as an acceptable response*/
 
-  if(answer1.toLowerCase() === 'n' || answer1.toLowerCase() === 'no') {
-    resultOne.textContent = answer1 + ', that\'s right!';
+  if(answer1.toLowerCase() === questData[0][1] || answer1.toLowerCase() === questData[0][2]) {
+    resultOne.textContent = answer1 + questData[0][3];
+    resultOne.className = 'right';
+
     counter += 1;
   } else {
-    resultOne.textContent = answer1 + ', Wrong muthafucka';
+    resultOne.textContent = answer1 + questData[0][4];
+    resultOne.className = 'wrong';
   }
 }
 
-q2();
+
 function q2() {
-  var answer2 = prompt(user + ', Same as before, so please answer with Y or N. Is Cabaret David Cole\'s favorite muscial');
+  var answer2 = prompt(questData[1][0]);
 
   console.log('The user answered Question 2: ' + answer2);
 
-  if(answer2.toLowerCase() === 'y' || answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'ya') {
-    resultTwo.textContent = answer2 + ' Yes! That is my favorite musical.';
+  if(answer2.toLowerCase() === questData[1][1] || answer2.toLowerCase() === questData[1][2]) {
+    resultTwo.textContent = answer2 + questData[1][3];
+    resultTwo.className = 'right';
     counter += 1;
   } else {
-    resultTwo.textContent = answer2 + ' DEFINITELY WRONG BIZNITCH! Cabaret is mos def my favorite muscal son.';
+    resultTwo.textContent = answer2 + questData[1][4];
+    resultTwo.className = 'wrong';
   }
 }
 
-q3();
+
 function q3() {
-  var answer3 = prompt(user + 'One last question (again please answer with Y or N) Is codefellows hella awesome?' );
+  var answer3 = prompt(questData[2][0] );
 
   console.log('The user answered Question 3: ' + answer3);
 
-  if(answer3.toLowerCase() === 'y' || answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'ya') {
-    resultThree.textContent = answer3 + ' Obviously!';
+  if(answer3.toLowerCase() === questData[2][1] || answer3.toLowerCase() === questData[2][2]) {
+    resultThree.textContent = answer3 + questData[2][3];
+    resultThree.className = 'right';
     counter+=1;
   } else {
-    resultThree.textContent = answer3 + ' You straight trippin\' son! codefellows is toats hella awesome!';
+    resultThree.textContent = answer3 + questData[2][4];
+    resultThree.className = 'wrong';
   }
 }
+q1();
+q2();
+q3();
+
 
 q4();
 function q4() {
