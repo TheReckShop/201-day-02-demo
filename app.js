@@ -6,13 +6,17 @@ var res3 = document.getElementById('resultThree');
 var res4 = document.getElementById('resultFour');
 var res5 = document.getElementById('resultFive');
 
+// var quesData = [[first question stuff],[second question stuff]]
+// var quesData = [[ques, ans, right-mess, wrong-mess],[second question stuff]]
+var quesData = [[user + ', this is a yes or no question, so please answer with Y or N. Does David Cole enjoy the musial "CATS"?', 'n', 'no' right-mess, wrong-mess],[second question stuff]]
+
 var user = prompt('What is your name?');
   console.log('The user\'s name is ' + user);
 alert('Hi There, ' + user + ', Imma ax you a few questions.');
 
 q1();
 function q1() {
-  var answer1 = prompt(user + ', this is a yes or no question, so please answer with Y or N. Does David Cole enjoy the musial "CATS"?');
+  var answer1 = prompt(quesData[0][0]);
 
   console.log('The user answered Question 1: ' + answer1);
 
